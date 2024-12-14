@@ -5,8 +5,21 @@ This project scrapes the Shepherd catalog, and displays it on a website.
 The "data_maker" submodule is what scrapes the data. There should probably be a separate website and scrape module...
 
 
-Using this:
+# Important
+If you want to run as a package, you need to have the templates and static folder in the working directory, or in a subdirectory.
+The webserver will search every folder in the working directory until it finds the "templates" and "static" folder.
 
+Meaning, you will have to download the project from github, and run the package while inside the project folder.
+
+Which really defeats the whole point of having it be a package... So you could just download the static and templates folder too.
+But I spent like an hour trying to make it not like this and I couldn't figure it out.
+
+Besides that, tnstalling one of the packages and doing 
+python -m shepherd_course_picker
+makes it go. the webiste will be at http://localhost:5000 (it will also say this in the terminal window you run it in)
+
+
+Usage:
 
 The landing page of the website has a list of programs.
 Pick one and click on it to move to the 2nd page.
