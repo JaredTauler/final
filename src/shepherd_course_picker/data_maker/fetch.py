@@ -26,7 +26,7 @@ def cache_fetch(url):
 
     furi = f'{save_dir}/{fname}'
     if found:
-        with open(furi, 'r', encoding='utf-8') as g: # FIXME test this on windows
+        with open(furi, 'r', encoding='utf-8') as g: # Tested on windows!
             return g.read()
     else:
         print("FETCHING")
