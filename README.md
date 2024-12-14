@@ -7,6 +7,7 @@ The data_maker works perfectly fine on its own without the webapp portion.
 
 # Monkey Business
 <strong>To run as a package, you need to have some project folders in the working directory, or in a subdirectory. </strong>
+The files it needs are CSS, JS, and HTML. Meaning I can't just simply import them.
 The Flask app will search every folder in the working directory until it finds the "templates" and "static" folder.
 
 Meaning, you will have to download the project from Github, and run the package while inside the project folder.
