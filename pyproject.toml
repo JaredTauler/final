@@ -1,0 +1,14 @@
+[project]
+name = "shepherd_course_picker_jaredt2003"
+version = "0.0.1"
+authors = [
+    { name="Jared Tauler", email="jaredt2003@hotmail.com" },
+]
+description = "Package for scraping Shepherd University catalog"
+readme = "README.md"
+requires-python = ">=3.11.9"
+dependencies = [
+    'requests',
+    'Flask',
+    'beautifulsoup4'
+]

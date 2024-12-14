@@ -1,0 +1,104 @@
+
+
+.node {
+    /*     width: 100px; */
+    /*     height: 100px; */
+    padding: 10px;
+    margin: 5px;
+    color: white;
+    /*     text-align: center; */
+    /*     display: flex; */
+    /*     justify-content: center; */
+    /*     align-items: center; */
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+}
+
+.node[depth="0"] {
+    background-color: #2e2e2e; /* Dark gray */
+}
+
+.node[depth="1"] {
+    background-color: #444444; /* Slightly different dark gray */
+}
+
+
+
+
+body, html {
+    background-color:black;
+    margin: 0;
+    padding: 0;
+    /*height: 100%;*/
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Container takes full screen height */
+.container {
+    height: 100%;
+    /*width: 100vw;*/
+    display: flex;
+}
+.node-container {
+    height: 100%;
+    overflow: scroll;
+}
+
+
+.cart-container {
+    flex: 1;
+    height: 100%;
+    overflow: scroll;
+
+;
+}
+.node-container {
+    flex: 1;
+    /*width: 50%;*/
+}
+
+
+.node {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.clickable_node {
+    cursor: pointer;
+    user-select: None;
+
+    transition: transform 0.1s linear;
+    transform: scale(0); /* Start small */
+    animation: expand 0.3s ease forwards;
+}
+
+.clickable_node:hover {
+    transition: transform 0.1s linear;
+    /*color: lightgray;*/
+    transform: scale(1.02);
+
+    /*Setting animation to 0 seconds stops it from interfereing with appearing animation*/
+    animation: expand 0s;
+}
+
+@keyframes expand {
+    from {
+        transform: scale(0); /* Start at 0 size */
+    }
+    to {
+        transform: scale(1); /* Full size */
+    }
+}
+
+
+
+
+.in_cart {
+    color: green;
+}
+
+#total_credits {
+    color:white;
+}
